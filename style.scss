@@ -1,0 +1,60 @@
+@font-face {
+  font-family: f1;
+  src: url(./public/fonts/3cb883af8c65796b-s.p.woff2);
+}
+
+@font-face {
+  font-family: f3;
+  src: url(./public/fonts/461799daff61149a-s.p.woff2);
+}
+
+@font-face {
+  font-family: f4;
+  src: url(./public/fonts/4b8cf8a338ef79a9-s.p.woff2);
+}
+
+@font-face {
+  font-family: f6;
+  src: url(./public/fonts/60c9b95e8d9e49be-s.p.woff2);
+}
+
+@font-face {
+  font-family: f7;
+  src: url(./public/fonts/6ad0344ed98ac2e9-s.p.woff2);
+}
+
+@font-face {
+  font-family: f8;
+  src: url(./public/fonts/b0bb26939bb40fdb-s.p.woff2);
+}
+
+
+@font-face {
+  font-family: f9;
+  src: url(./public/fonts/ec516af01d950ed6-s.p.woff2);
+}
+
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+
+html{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+h1{
+  font-family: f1;
+}
