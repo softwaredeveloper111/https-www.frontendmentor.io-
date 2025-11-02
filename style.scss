@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: f2;
+  src: url(./public/fonts/3cb883af8c65796b-s.p.woff2);
+}
+
+@font-face {
   font-family: f3;
   src: url(./public/fonts/461799daff61149a-s.p.woff2);
 }
@@ -11,6 +16,11 @@
 @font-face {
   font-family: f4;
   src: url(./public/fonts/4b8cf8a338ef79a9-s.p.woff2);
+}
+
+@font-face {
+  font-family: f5;
+  src: url(./public/fonts/5efe335d41d94188-s.p.woff2);
 }
 
 @font-face {
@@ -52,9 +62,182 @@ html,body{
 html{
   overflow-x: hidden;
   overflow-y: auto;
+  font-size: clamp(14px, 1vw , 18px);
 }
 
 
 h1{
   font-family: f1;
+}
+
+
+
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  gap: 1rem;
+  max-width: 1900px;
+  margin: auto;
+  
+  #view-1{
+    width: 100%;
+    padding: 1rem 1.5rem;
+
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      #nav-left{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        >i{
+          font-size: 3em;
+        }
+        >img#img1{
+          width: 2.1rem;
+        }
+        >img#img2{
+          display: none;
+        }
+      }
+
+      #nav-right{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        
+        #links{
+           display: none;
+           gap: 1rem;
+           font-family: f2;
+           text-transform: uppercase;
+
+           >h4{
+            font-size: .8rem;
+            display: flex;
+            align-items: center;
+            gap: .3rem;
+            >i{
+              font-size: 1.28rem;
+              font-weight: 500;
+            }
+           }
+        }
+
+        >#btn1,#btn2{
+          background-color: black;
+          border-radius: 40px;
+          border: none;
+          padding: .6rem 2rem;
+          text-transform: uppercase;
+          font-family: f4;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: .5rem;
+          font-size: 1.1rem;
+
+          >i{
+            font-size: 1.5rem;
+          }
+        }
+        >#btn2{
+          display: none;
+        }
+      }
+
+
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+@media (min-width:768px) {
+  
+}
+
+
+
+
+
+
+@media (min-width:1024px) {
+
+ html{
+  font-size: clamp(14px,2rem,18px);
+ }
+
+  main{
+    #view-1{
+      nav{
+        #nav-left{
+          >i,>img#img1{
+            display: none;
+          }
+          >img#img2{
+            display: block;
+            width: 11rem;
+          }
+        }
+        #nav-right{
+          #links{
+            display: flex;
+          }
+          #btn2{
+            font-size: .8rem;
+            padding: .4rem 2rem;
+
+            >i{
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:500px) {
+  main{
+    #view-1{
+      nav{
+       #nav-right{
+        #btn1{
+          display: none;
+        }
+        #btn2{
+          display: flex;
+        }
+       }
+      }
+    }
+  }
+}
+
+
+@media (min-width:1400px) {
+  html{
+  font-size: clamp(14px,2rem,28px);
+ }
 }
